@@ -17,5 +17,6 @@ public class ParticipanteService {
 
     public List<Participante> listarParticipantes() { return this.participanteRepository.findAll();}
 
-    public Participante listarParticipantesPorId(int idParticipante) { return this.participanteRepository.findById}
+    public Participante listarParticipantesPorId(int idParticipante) { return this.participanteRepository.findById(idParticipante).orElse(null);
+    }
 }
