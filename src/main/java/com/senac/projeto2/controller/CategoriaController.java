@@ -2,7 +2,6 @@ package com.senac.projeto2.controller;
 
 import com.senac.projeto2.entity.Categoria;
 import com.senac.projeto2.service.CategoriaService;
-import com.senac.projeto2.service.UsuarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;

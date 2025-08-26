@@ -1,6 +1,6 @@
 package com.senac.projeto2.entity;
 
-import com.senac.projeto2.service.PatrocinadorService;
+
 import jakarta.persistence.*;
 
 @Entity

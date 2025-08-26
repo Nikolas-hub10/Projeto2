@@ -15,8 +15,6 @@ import java.util.List;
 public class PatrocinadorController {
 
     private final PatrocinadorService patrocinadorService;
-
-    // O Spring injeta o bean PatrocinadorService que foi criado com sucesso.
     public PatrocinadorController(PatrocinadorService patrocinadorService) {
         this.patrocinadorService = patrocinadorService;
     }
