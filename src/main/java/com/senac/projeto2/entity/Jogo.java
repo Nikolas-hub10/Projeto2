@@ -26,6 +26,8 @@ public class Jogo {
 
     @OneToMany(mappedBy = "jogo")
     private List<Inscricao> inscricoes;
+    @OneToMany(mappedBy = "jogo")
+    private List<Premio> premios;
 
     public List<Inscricao> getInscricoes() {
         return inscricoes;

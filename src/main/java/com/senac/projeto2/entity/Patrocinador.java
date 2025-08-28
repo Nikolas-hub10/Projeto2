@@ -1,7 +1,10 @@
 package com.senac.projeto2.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+
+import java.util.Set;
 
 @Entity
 @Table(name="patrocinador")
@@ -16,6 +19,11 @@ public class Patrocinador  {
     private String patrocinadorRepresetante;
     @Column(name = "patrocinador_status", nullable = false)
     private int patrocinadorStatus;
+
+
+    @ManyToMany(mappedBy = "patrocinadores")
+    @JsonIgnore // Essencial para evitar loops infinitos
+    private Set<Jogo> jogos;
 
     public int getId() {
         return id;
